@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function Home() {
   const router = useRouter();
 
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState();
 
   useEffect(() => {
     onAuthStateChanged(auth, user => {
